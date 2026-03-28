@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.B. Auto | Toyota, Lexus, Honda & Acura Specialists in Arroyo Grande</title>
+    <meta name="description" content="Professional auto repair in Arroyo Grande, CA. ASE Certified Master Technicians specializing in Toyota, Lexus, Honda, and Acura. Quality & Courtesy Come Standard.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0a0a0a',
+                        jbBlue: '#0057A8',
+                        jbYellow: '#FFB800',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #0a0a0a; color: white; }
+        .glass-nav {
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .service-card {
+            background: #111;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            border: 1px solid #222;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: #0057A8;
+        }
+        .gallery-img {
+            transition: transform 0.5s ease;
+        }
+        .gallery-container:hover .gallery-img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-2">
+                    <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" class="h-12 w-auto">
+                        <circle cx="200" cy="200" r="195" fill="#FFB800"/>
+                        <circle cx="200" cy="200" r="182" fill="#CC2200"/>
+                        <circle cx="200" cy="200" r="168" fill="none" stroke="#FFB800" stroke-width="3" opacity="0.6"/>
+                        <text x="200" y="165" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="90" fill="white" text-anchor="middle" letter-spacing="2">J.B.</text>
+                        <text x="200" y="255" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="90" fill="white" text-anchor="middle" letter-spacing="4">AUTO</text>
+                        <polygon points="210,278 190,315 205,315 195,348 225,305 207,305 222,278" fill="#FFB800"/>
+                    </svg>
+                </a>
+
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-sm font-medium hover:text-jbYellow transition">About</a>
+                    <a href="#services" class="text-sm font-medium hover:text-jbYellow transition">Services</a>
+                    <a href="#gallery" class="text-sm font-medium hover:text-jbYellow transition">Gallery</a>
+                    <a href="#reviews" class="text-sm font-medium hover:text-jbYellow transition">Reviews</a>
+                    <a href="#contact" class="text-sm font-medium hover:text-jbYellow transition">Contact</a>
+                    <a href="tel:8056682626" class="bg-jbBlue hover:bg-blue-700 text-white px-5 py-2.5 rounded-md font-bold text-sm transition shadow-lg">
+                        Call Now
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button (Simple version) -->
+                <div class="md:hidden flex items-center">
+                    <a href="tel:8056682626" class="text-jbYellow font-bold text-sm">(805) 668-2626</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://img1.wsimg.com/isteam/ip/129387e8-3525-46c9-9aa8-8fa5b9d3c90d/2012_JB_AUTO_0784.jpg" 
+                 class="w-full h-full object-cover" alt="J.B. Auto Shop Interior">
+            <div class="absolute inset-0 bg-black/70"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight mb-6">
+                Where Quality & <span class="text-jbYellow">Courtesy</span> Come Standard.
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                Specializing in Toyota, Lexus, Honda, and Acura since 2012. 
+                Arroyo Grande's trusted dealer alternative for precision auto care.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="tel:8056682626" class="w-full sm:w-auto bg-jbBlue hover:bg-blue-700 text-white px-8 py-4 rounded-md font-bold text-lg transition shadow-xl">
+                    (805) 668-2626
+                </a>
+                <a href="#services" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-md font-bold text-lg transition">
+                    Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <div class="bg-jbBlue py-4 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-wrap justify-center md:justify-between items-center gap-4 md:gap-0 text-xs md:text-sm font-bold uppercase tracking-widest text-center">
+                <span>ASE Certified Master Technicians</span>
+                <span class="hidden md:block text-blue-400">|</span>
+                <span>Toyota & Honda Specialists</span>
+                <span class="hidden md:block text-blue-400">|</span>
+                <span>12-Month Unlimited Mileage Warranty</span>
+                <span class="hidden md:block text-blue-400">|</span>
+                <span>OEM Parts Only</span>
+                <span class="hidden md:block text-blue-400">|</span>
+                <span class="text-jbYellow">SMOG — No Appointment Needed</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-jbYellow font-bold tracking-widest uppercase mb-4">Established Excellence</h2>
+                <h3 class="text-4xl md:text-5xl font-bold mb-8">Your Dealer Alternative</h3>
+                <div class="grid grid-cols-2 gap-6 mb-8">
+                    <div class="bg-zinc-900 p-6 border-l-4 border-jbYellow">
+                        <div class="text-3xl font-extrabold text-jbYellow">5.0</div>
+                        <div class="text-sm text-gray-400 uppercase tracking-wide">Star Rating</div>
+                    </div>
+                    <div class="bg-zinc-900 p-6 border-l-4 border-jbYellow">
+                        <div class="text-3xl font-extrabold text-jbYellow">89+</div>
+                        <div class="text-sm text-gray-400 uppercase tracking-wide">Five Star Reviews</div>
+                    </div>
+                </div>
+            </div>
+            <div class="space-y-6 text-gray-300 text-lg leading-relaxed">
+                <p>J.B. Auto specializes in the maintenance and repair of <span class="text-white font-semibold">Toyota/Lexus</span> and <span class="text-white font-semibold">Honda/Acura</span> vehicles. We understand that your vehicle is a significant investment, and our goal is to provide dealer-level expertise with the personal touch of a local shop.</p>
+                <p>Our team consists of <span class="text-white font-semibold">ASE Certified Master Technicians</span> who utilize the latest diagnostic equipment. We don't just fix cars; we build relationships based on honesty and transparent communication.</p>
+                <p>We stand behind every repair with a <span class="text-jbYellow font-semibold">12-month unlimited mileage warranty</span> on all work. At J.B. Auto, you get the peace of mind you deserve without the dealer price tag.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-zinc-950 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Expert Auto Services</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Precision maintenance tailored to the specific needs of Japanese engineering.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service 1 -->
+                <div class="service-card p-8 rounded-xl">
+                    <svg class="w-10 h-10 mb-6 text-jbBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <h4 class="text-xl font-bold mb-3">SMOG Inspections</h4>
+                    <p class="text-gray-400 text-sm">No appointment needed for 2000 and newer vehicles. Fast and efficient certification.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card p-8 rounded-xl">
+                    <svg class="w-10 h-10 mb-6 text-jbYellow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    <h4 class="text-xl font-bold mb-3">Oil & Filter</h4>
+                    <p class="text-gray-400 text-sm">Chevron Havoline oil and genuine OEM filters. Includes a comprehensive multi-point inspection.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card p-8 rounded-xl">
+                    <svg class="w-10 h-10 mb-6 text-jbBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <h4 class="text-xl font-bold mb-3">Hybrid Service</h4>
+                    <p class="text-gray-400 text-sm">Specialized HV battery replacement and cooling system maintenance for Toyota/Lexus Hybrids.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card p-8 rounded-xl">
+                    <svg class="w-10 h-10 mb-6 text-jbYellow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path></svg>
+                    <h4 class="text-xl font-bold mb-3">Brake Service</h4>
+                    <p class="text-gray-400 text-sm">Disc and drum repair featuring our ProCut On-Car Brake Lathe for the perfect finish.</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="service-card p-8 rounded-xl">
+                    <svg class="w-10 h-10 mb-6 text-jbBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                    <h4 class="text-xl font-bold mb-3">Engine Repairs</h4>
+                    <p class="text-gray-400 text-sm">From timing belts and chains to complex cylinder head repairs and engine swaps.</p>
+                </div>
+                <!-- Service 6 -->
+                <div class="service-card p-8 rounded-xl">
+                    <svg class="w-10 h-10 mb-6 text-jbYellow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <h4 class="text-xl font-bold mb-3">Factory Care</h4>
+                    <p class="text-gray-400 text-sm">30k, 60k, 90k, and 120k mile interval services to keep your warranty valid and car reliable.</p>
+                </div>
+                <!-- Service 7 -->
+                <div class="service-card p-8 rounded-xl">
+                    <svg class="w-10 h-10 mb-6 text-jbBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                    <h4 class="text-xl font-bold mb-3">Suspension</h4>
+                    <p class="text-gray-400 text-sm">Struts, shocks, ball joints, and wheel bearings. Restoring your vehicle's handling and safety.</p>
+                </div>
+                <!-- Service 8 -->
+                <div class="service-card p-8 rounded-xl">
+                    <svg class="w-10 h-10 mb-6 text-jbYellow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    <h4 class="text-xl font-bold mb-3">Fluid Services</h4>
+                    <p class="text-gray-400 text-sm">Transmission, coolant, brake fluid, and gear oil exchanges using high-grade fluids.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-24 px-4 bg-darkBg">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+            <div class="space-y-4">
+                <div class="w-16 h-16 bg-jbBlue/10 text-jbBlue rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                </div>
+                <h4 class="text-xl font-bold">OEM Parts Only</h4>
+                <p class="text-gray-400">We never compromise. We only use Genuine Toyota and Honda parts to ensure exact fit and longevity.</p>
+            </div>
+            <div class="space-y-4 border-y md:border-y-0 md:border-x border-white/10 py-12 md:py-0">
+                <div class="w-16 h-16 bg-jbBlue/10 text-jbBlue rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                </div>
+                <h4 class="text-xl font-bold">12-Month Warranty</h4>
+                <p class="text-gray-400">Our confidence in our craft allows us to offer a full 1-year unlimited mileage warranty on every job.</p>
+            </div>
+            <div class="space-y-4">
+                <div class="w-16 h-16 bg-jbBlue/10 text-jbBlue rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                </div>
+                <h4 class="text-xl font-bold">ASE Certified</h4>
+                <p class="text-gray-400">Work performed by Master Technicians who are continually trained on modern vehicle systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Inside Our Shop</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="gallery-container overflow-hidden rounded-lg aspect-video bg-zinc-900">
+                    <img src="https://img1.wsimg.com/isteam/ip/129387e8-3525-46c9-9aa8-8fa5b9d3c90d/2012_JB_AUTO_0784.jpg" class="gallery-img w-full h-full object-cover" alt="Shop Front">
+                </div>
+                <div class="gallery-container overflow-hidden rounded-lg aspect-video bg-zinc-900">
+                    <img src="https://lh3.googleusercontent.com/places/ANXAkqFOwnMYO-p5vnN-KMCTmR8GMSWyfJ5Q1w1S62YGsD6_C-Iy5Qs072EoQrS3nA-WezAzR_0_rJX-5ftEP4R71kdO93ypEfwoBRQ=s4800-w800-h600" class="gallery-img w-full h-full object-cover" alt="Engine Work">
+                </div>
+                <div class="gallery-container overflow-hidden rounded-lg aspect-video bg-zinc-900">
+                    <img src="https://lh3.googleusercontent.com/places/ANXAkqHfi1sh3Z6Nf-AmcnM3PKmk4RoazNIEQgTrWUOK226t7Lm5PD11rPoz6-1aH77O_5WzYpSWGc_zfxwIB4yrXhzuwAOHTLRR-pg=s4800-w800-h600" class="gallery-img w-full h-full object-cover" alt="Shop Interior">
+                </div>
+                <div class="gallery-container overflow-hidden rounded-lg aspect-video bg-zinc-900 lg:col-span-2">
+                    <img src="https://lh3.googleusercontent.com/places/ANXAkqE1GgjxtrUn5Dh3GqnyCZUz4GJrj9TgMeNgOfa53dpqGsKWeIFhzvXtJA9f_U4vya-h2T84i-oBzrpyncrYle08ZPvSVDOr304=s4800-w800-h600" class="gallery-img w-full h-full object-cover" alt="Detail Work">
+                </div>
+                <div class="gallery-container overflow-hidden rounded-lg aspect-video bg-zinc-900">
+                    <img src="https://lh3.googleusercontent.com/place-photos/AL8-SNEx7T7-UucQvD_bjq0_p4hXFAIAPQmOtDHo8pLaYKlxONkHZYERXY1Ok_4CekWw7LP8TJvotVb3ljSFKaliEgZMf9dakpV0PWgLkrLeL8XwXnAegGray7kugF16G1HwhfmGPfLY0u_zPtY2MQ=s4800-w800-h600" class="gallery-img w-full h-full object-cover" alt="Shop Diagnostic Area">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-24 px-4 bg-darkBg">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">Trusted by the Community</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-zinc-900 p-8 border-l-4 border-jbBlue">
+                    <div class="flex text-jbYellow mb-4">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-300 italic mb-6">"Joe is personable, professional, knowledgeable, has integrity, cares about the community and is HONEST! I will only take my vehicles to him."</p>
+                    <div class="font-bold">— Happy Customer</div>
+                </div>
+                <!-- Review 2 -->
+                <div class="bg-zinc-900 p-8 border-l-4 border-jbBlue">
+                    <div class="flex text-jbYellow mb-4">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-300 italic mb-6">"The JB auto boys hooked me up with brand new brakes just in time for a big off-roading adventure. I entrust my vehicles with complete peace of mind."</p>
+                    <div class="font-bold">— Adventure Enthusiast</div>
+                </div>
+                <!-- Review 3 -->
+                <div class="bg-zinc-900 p-8 border-l-4 border-jbBlue">
+                    <div class="flex text-jbYellow mb-4">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-300 italic mb-6">"There is simply no better auto repair shop anywhere! Joe and Corey are amazing. Their shop is immaculate and their customer service is over the top!"</p>
+                    <div class="font-bold">— Local Resident</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="py-24 bg-zinc-950 text-center px-4">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-8">Ready to experience the J.B. Auto difference?</h2>
+            <p class="text-xl text-gray-400 mb-12">Call us today to schedule your maintenance or repair. We're here to keep your Toyota or Honda running like new.</p>
+            <a href="tel:8056682626" class="inline-block bg-jbBlue hover:bg-blue-700 text-white px-10 py-5 rounded-md font-bold text-2xl transition shadow-2xl mb-12">
+                (805) 668-2626
+            </a>
+            <div class="flex flex-wrap justify-center gap-8 opacity-60 grayscale hover:grayscale-0 transition duration-500">
+                <span class="font-bold uppercase tracking-widest text-sm">ASE Certified</span>
+                <span class="font-bold uppercase tracking-widest text-sm">12-Month Warranty</span>
+                <span class="font-bold uppercase tracking-widest text-sm">OEM Parts Only</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-darkBg pt-20 pb-10 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <!-- Col 1-2: Logo & Info -->
+            <div class="md:col-span-2">
+                <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto mb-6">
+                    <circle cx="200" cy="200" r="195" fill="#FFB800"/>
+                    <circle cx="200" cy="200" r="182" fill="#CC2200"/>
+                    <circle cx="200" cy="200" r="168" fill="none" stroke="#FFB800" stroke-width="3" opacity="0.6"/>
+                    <text x="200" y="165" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="90" fill="white" text-anchor="middle" letter-spacing="2">J.B.</text>
+                    <text x="200" y="255" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="90" fill="white" text-anchor="middle" letter-spacing="4">AUTO</text>
+                    <polygon points="210,278 190,315 205,315 195,348 225,305 207,305 222,278" fill="#FFB800"/>
+                </svg>
+                <p class="text-gray-400 max-w-sm">
+                    Professional auto repair and maintenance for Arroyo Grande. Specialists in Japanese imports with a focus on trust and technical excellence.
+                </p>
+            </div>
+            
+            <!-- Col 3: Contact -->
+            <div>
+                <h4 class="text-lg font-bold mb-6 text-white">Contact Us</h4>
+                <address class="not-italic text-gray-400 space-y-4">
+                    <p>139 Traffic Way<br>Arroyo Grande, CA 93420</p>
+                    <p class="text-jbYellow font-bold"><a href="tel:8056682626">(805) 668-2626</a></p>
+                    <a href="https://maps.google.com/?q=139+Traffic+Way,+Arroyo+Grande,+CA+93420" target="_blank" class="inline-block bg-zinc-800 hover:bg-zinc-700 text-white px-4 py-2 rounded text-sm transition mt-2">
+                        Get Directions
+                    </a>
+                </address>
+            </div>
+
+            <!-- Col 4: Hours -->
+            <div>
+                <h4 class="text-lg font-bold mb-6 text-white">Hours</h4>
+                <ul class="text-gray-400 space-y-2">
+                    <li class="flex justify-between"><span>Mon–Fri</span> <span>8am–5pm</span></li>
+                    <li class="flex justify-between text-zinc-600"><span>Sat–Sun</span> <span>Closed</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+            <p>&copy; 2025 J.B. Auto Repair. All Rights Reserved.</p>
+            <p class="mt-4 md:mt-0">Quality & Courtesy Come Standard.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
